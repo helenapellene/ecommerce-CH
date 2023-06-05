@@ -1,0 +1,34 @@
+body{
+    background-color: #000;
+    height: 100%;
+}
+
+.main-sect{
+    width: 100%;
+    height:200px;
+}
+
+.envios{
+    width:100%;
+    height:100px;
+    background-color: rgb(245, 248, 250);
+    margin-top:3rem;
+    border-radius: 15px;
+    .lista-envio{
+        display:flex;
+        justify-content: center;
+        gap:3rem;
+        li{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            list-style: none;
+            margin-top: 1.5rem;
+            .div-icon{
+                width:40px;
+            }
+            dt{
+               margin-left: 2.5rem;
+            }
+        }        
+    }
+}
