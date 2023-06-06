@@ -1,7 +1,10 @@
 body{
     background-color: #000;
-    height: 100%;
+    
 }
+html, body {
+    height: 100%;
+  }
 
 .main-sect{
     width: 100%;
@@ -11,12 +14,13 @@ body{
 h1{
     font-family: 'League Spartan', sans-serif;
     color:white;
+    margin: 3.5rem 0 3.5rem 3.5rem ; //arriba derecha abajo izq
 }
 
 .envios{
     width:100%;
     height:100px;
-    background-color: rgb(245, 248, 250);
+    background: linear-gradient(white, rgb(184, 169, 169));
     margin-top:3rem;
     border-radius: 15px;
     .lista-envio{
@@ -26,6 +30,7 @@ h1{
         li{
             font-family: 'Ubuntu', sans-serif;
             font-weight: bold;
+            color:rgb(46, 44, 44);
             list-style: none;
             margin-top: 1.5rem;
             .div-icon{
@@ -47,3 +52,44 @@ h1{
         object-fit: cover;
       }
 }
+.new-cont{
+    background: linear-gradient(white, rgb(184, 169, 169));
+    width:100%;
+    height:100px;
+    margin-top:3rem;
+    margin-bottom: 3rem;
+    .newsletter{
+        display:flex;
+        flex-direction: row;
+        justify-content: center ;
+        gap:3rem;
+        li{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 40px;
+            color:#000;
+            margin-top:2rem;
+            .searchbar{
+                margin-top: 0.5rem;
+            }
+
+        }
+    
+    }
+}
+
+  /* BOTON ABAJO HACIA ARRIBA */
+  .scrollup{
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff; 
+    background-color: #000;
+    border: 1px solid #A2A2A2;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right:30px;
+    cursor: pointer;
+    }
+  

@@ -33,8 +33,88 @@ header .navbar .searchbar {
   margin-top: 15px;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  padding-bottom: 16px;
+}
+
+i {
+  font-size: 24px;
+}
+
+/* ======================== */
+.footer {
+  padding-block: 50px;
+  padding-bottom: 25px;
+  background-color: #151515;
+  color: #666873;
+  /* Margin-top: auto; for demo use only */
+  margin-top: auto;
+}
+
+.footer__container {
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 20px;
+}
+
+.footer__title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__list-link {
+  transition: color 0.25s;
+}
+
+.footer__list-link:hover {
+  color: #fff;
+}
+
+.footer__divider {
+  margin-block: 25px;
+  border: none;
+  border-top: 1px solid rgba(252, 255, 255, 0.1);
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer__list--bottom {
+  flex-direction: row;
+}
+
 body {
   background-color: #000;
+}
+
+html, body {
   height: 100%;
 }
 
@@ -46,12 +126,13 @@ body {
 h1 {
   font-family: "League Spartan", sans-serif;
   color: white;
+  margin: 3.5rem 0 3.5rem 3.5rem;
 }
 
 .envios {
   width: 100%;
   height: 100px;
-  background-color: rgb(245, 248, 250);
+  background: linear-gradient(white, rgb(184, 169, 169));
   margin-top: 3rem;
   border-radius: 15px;
 }
@@ -63,6 +144,7 @@ h1 {
 .envios .lista-envio li {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
+  color: rgb(46, 44, 44);
   list-style: none;
   margin-top: 1.5rem;
 }
@@ -81,6 +163,45 @@ h1 {
 .card-cont .card {
   width: 15rem;
   object-fit: cover;
+}
+
+.new-cont {
+  background: linear-gradient(white, rgb(184, 169, 169));
+  width: 100%;
+  height: 100px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.new-cont .newsletter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+.new-cont .newsletter li {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  color: #000;
+  margin-top: 2rem;
+}
+.new-cont .newsletter li .searchbar {
+  margin-top: 0.5rem;
+}
+
+/* BOTON ABAJO HACIA ARRIBA */
+.scrollup {
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #A2A2A2;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
