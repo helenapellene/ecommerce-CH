@@ -17,7 +17,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <!-- Link to remixicon cdn -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./assets/logo.png">
   <title>Document</title>
@@ -34,9 +38,24 @@
         <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" class="logo"
             alt="logo-lanochedelasautoras"></a>
         <ul class="navbar-nav justify-content-end nav-sections">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">categorias</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">arte</a></li>
+              <li><a class="dropdown-item" href="#">biografias</a></li>
+              <li><a class="dropdown-item" href="#">derecho</a></li>
+              <li><a class="dropdown-item" href="#">filosofia</a></li>
+              <li><a class="dropdown-item" href="#">historia</a></li>
+              <li><a class="dropdown-item" href="#">novelas y ficcion</a></li>
+              <li><a class="dropdown-item" href="#">ensayos</a></li>
+              <li><a class="dropdown-item" href="#">poesia</a></li>
+            </ul>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">categorias</a>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">autoras</a>
           </li>
@@ -49,7 +68,9 @@
             aria-label="Book's name" aria-describedby="button-addon2">
           <button class="btn btn-outline-secondary" type="button" id="button-addon2">🔍︎</button>
         </div>
-
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><img src="./assets/carrito.png" class="nav-icon"></a>
+        </li>
       </div>
     </nav>
   </header>
@@ -120,6 +141,73 @@
     <section class="novedades">
       <h1>Novedades</h1>
       <div class="card-cont">
+        <figure class="product-card">
+          <img src="https://i.postimg.cc/G2Ld59Yr/image1.png" alt="Tapa de libro" class="product-card__image" />
+          <figcaption class="product-card__caption">
+            <header class="product-card__header">
+              <h2 class="product-card__title">Muerte en la vicaría</h2>
+              <p class="product-card__subtitle">Agatha Christie</p>
+            </header>
+            <footer class="product-card__footer">
+              <span class="product-card__price">$19.99</span>
+              <button class="product-card__button">
+                <i class="product-card__icon ri-add-line"></i>
+              </button>
+            </footer>
+          </figcaption>
+        </figure>
+
+        <figure class="product-card">
+          <img src="https://i.postimg.cc/cCdhYyVF/image2.png" alt="Tapa de libro" class="product-card__image" />
+          <figcaption class="product-card__caption">
+            <header class="product-card__header">
+              <h2 class="product-card__title">La casa de los espiritus</h2>
+              <p class="product-card__subtitle">Isabel Allende</p>
+            </header>
+            <footer class="product-card__footer">
+              <span class="product-card__price">$19.99</span>
+              <button class="product-card__button">
+                <i class="product-card__icon ri-add-line"></i>
+              </button>
+            </footer>
+          </figcaption>
+        </figure>
+
+        <figure class="product-card">
+          <img src="https://i.postimg.cc/wTf2trFk/image3.png" alt="Tapa de libro" class="product-card__image" />
+          <figcaption class="product-card__caption">
+            <header class="product-card__header">
+              <h2 class="product-card__title">Las protagonistas hablan: prostitucion y trabajo sexual</h2>
+              <p class="product-card__subtitle">Diana Maffia / Claudia Korol</p>
+            </header>
+            <footer class="product-card__footer">
+              <span class="product-card__price">$19.99</span>
+              <button class="product-card__button">
+                <i class="product-card__icon ri-add-line"></i>
+              </button>
+            </footer>
+          </figcaption>
+        </figure>
+
+        <figure class="product-card">
+          <img src="https://i.postimg.cc/RVRZTbJh/image5.png" alt="Tapa de libro" class="product-card__image" />
+          <figcaption class="product-card__caption">
+            <header class="product-card__header">
+              <h2 class="product-card__title">Quien no</h2>
+              <p class="product-card__subtitle">Claudia Piñeiro</p>
+            </header>
+            <footer class="product-card__footer">
+              <span class="product-card__price">$19.99</span>
+              <button class="product-card__button">
+                <i class="product-card__icon ri-add-line"></i>
+              </button>
+            </footer>
+          </figcaption>
+        </figure>
+
+      </div>
+      
+      <!-- <div class="card-cont">
         <div class="card">
           <img src="https://i.postimg.cc/G2Ld59Yr/image1.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -147,7 +235,7 @@
             <a href="#" class="btn btn-primary">COMPRAR</a>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </section>
 
